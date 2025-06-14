@@ -4,6 +4,9 @@ h1{
     color: rgb(189, 18, 112);
     text-align: center;
 }
+body{
+    background-color: rgb(243, 198, 230);
+}
 #add {
     color: rgb(255, 0, 149);
     background-color: rgb(69, 3, 71);
