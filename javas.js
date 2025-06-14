@@ -1,3 +1,4 @@
+const taskinput=document.getElementById("task");
 function adding(){
     const taskinput=document.getElementById("task");
     const tasktext=taskinput.value.trim();
@@ -19,6 +20,7 @@ function adding(){
         return;
 
     }
+    
 
     const taskdiv=document.createElement("div");
     taskdiv.className="task";
@@ -48,3 +50,10 @@ function adding(){
 
 
 }
+taskinput.addEventListener("keydown",function(event){
+    if(event.key==="Enter"){
+        event.preventDefault();
+        adding();
+
+    }
+})
